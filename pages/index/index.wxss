@@ -1,7 +1,16 @@
+.content{
+  background-image: url('https://raw.githubusercontent.com/udacity/cn-wechat-weather/2-4/images/sunny-bg.png')
+}
 .temp{
    margin-top: 300rpx;
    text-align: center;
    font-size: 200rpx;
    line-height: 280rpx;
    opacity: 0.8;
+}
+.description{
+   text-align: center;
+   font-size: 40rpx;
+   line-height: 56rpx;
+   opacity: 0.65;
 }
