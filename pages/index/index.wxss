@@ -15,7 +15,7 @@
    line-height: 56rpx;
    opacity: 0.65;
 }
-.wather-bg{
+.weather-bg{
   position: absolute;
   top: 0;
   left: 0;
@@ -23,4 +23,50 @@
   height: 100%;
   z-index: -1;
 }
+.temp-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 45rpx;
+}
 
+.temp-icon{
+  width: 36rpx;
+  height: 28rpx;
+  margin-right: 10px;
+}
+
+.temp-text{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+.scroll-weather{
+  display: flex;
+}
+
+.scroll-weather-item{
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   width: 120rpx;
+   align-items: center;
+}
+
+.item-time{
+  font-size: 30rpx;
+  line-height: 42rpx;
+
+}
+.item-icon{
+  margin-top: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
+
+}
+.item-weather{
+  margin-top: 46rpx;
+  font-size: 40rpx;
+  line-height: 54rpx;
+}

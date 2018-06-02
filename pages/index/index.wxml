@@ -1,7 +1,20 @@
 <!--index.wxml-->
 <view class='weather-warpper'>
-  <view class='temp'>12°</view>
-  <view class="description">晴天</view>
-  <image class="wather-bg" src='/images/sunny-bg.png' mode='scaleToFill'></image>
+  <view class='temp'>{{temp}}</view>
+  <view class="description">{{weather}}</view>
+  <image class="weather-bg" src='{{weather_bg}}' mode='scaleToFill'></image>
 </view>
+<view class='temp-title'>
+   <image class='temp-icon' src='/images/time-icon.png'> </image>
+   <view class='temp-text'>未来24小时天气预测</view>
+</view>
+<scroll-view scroll-x>
+  <view  class='scroll-weather'>
+    <view class="scroll-weather-item" wx:for="{{hourlyWeather}}">
+      <view class='item-time' >{{item.time}}</view>
+      <image class='item-icon'  src='{{item.iconPath}}'></image>
+      <view class='item-weather' >{{item.temp}}</view>
+    </view>
+  </view>
+</scroll-view>
 
